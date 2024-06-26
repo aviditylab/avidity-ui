@@ -1,6 +1,6 @@
 import { Menu, MenuProps } from "./Menu"
 import './menuGroup.css'
-interface MenuGroupProps {
+export interface MenuGroupProps {
   items: MenuProps[];
 }
 
