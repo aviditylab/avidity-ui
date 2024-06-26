@@ -7,7 +7,9 @@ const meta = {
   component: Menu,
   parameters: {
     layout: "centered",
-    default: "dark",
+    backgrounds: {
+      default: "dark",
+    },
   },
   tags: ["autodocs"],
   argTypes: {
