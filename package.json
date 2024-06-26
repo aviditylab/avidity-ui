@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "deploy": "storybook build && cp ./src/CNAME dist/ && gh-pages -f -d dist"
+    "deploy": "storybook build && gh-pages -f -d storybook-static"
   },
   "dependencies": {
     "@fontsource/inter": "^5.0.18",
