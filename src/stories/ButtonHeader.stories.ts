@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { within, userEvent, expect } from "@storybook/test";
 
 import { ButtonHeader } from "./ButtonHeader";
 
@@ -17,8 +16,8 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const WithoutMenu: Story = {
+export const StartForFree: Story = {
   args: {
-    showMenu: true
-  }
+    showMenu: false,
+  },
 };

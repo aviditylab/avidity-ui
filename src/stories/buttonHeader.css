@@ -3,12 +3,24 @@
   align-items: center;
   background-color: rgb(28, 31, 41);
   border-radius: 500px;
-  width: auto;
+  width: 141;
   overflow: hidden;
+}
+.button {
+  border-radius: 10rem;
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 16px 24px;
+  width: 142px;
+  font-family: inter sans-serif;
+  flex-wrap: nowrap;
+  text-wrap: nowrap;
 }
 .menuheaderItem {
   overflow: "hidden";
   display: flex;
+  width: 0;
 }
 
 .menuheaderItem > * {

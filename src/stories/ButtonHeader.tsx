@@ -22,7 +22,7 @@ export const ButtonHeader = ({ showMenu = false, ...props }: ButtonHeaderProps) 
     }
   })
   const onChangeWidth = contextSafe(() => {
-    if (container.current?.clientWidth === 142) {
+    if (showMenu) {
       gsap.to('.button-header', { width: 504, duration: 1 });
       gsap.to('.menuheaderItem', { width: "100%", duration: 1 });
     } else {

@@ -3,7 +3,7 @@ import { fn } from "@storybook/test";
 import { Menu } from "./Menu";
 
 const meta = {
-  title: "Demo/Menu",
+  title: "Component/Menu",
   component: Menu,
   parameters: {
     layout: "centered",
@@ -11,7 +11,6 @@ const meta = {
       default: "dark",
     },
   },
-  tags: ["autodocs"],
   argTypes: {
     color: { control: "color" },
   },
