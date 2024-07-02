@@ -4,9 +4,9 @@ export interface MenuGroupProps {
   items: MenuProps[];
 }
 
-export const MenuGroup = ({ items }: MenuGroupProps) => {
+export const MenuGroup = ({ items, ...props }: MenuGroupProps) => {
   return (
-    <div className="menuGroup">
+    <div className="menuGroup" {...props}>
       {items.map((item, index) => (
         <Menu {...item} key={index} />
       ))}
