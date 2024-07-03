@@ -12,10 +12,10 @@ const meta = {
     },
   },
   argTypes: {
-    color: { control: "color" },
+    color: { conrol: "color" },
   },
   args: { onClick: () => fn() },
-} satisfies Meta<typeof Menu>;
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;

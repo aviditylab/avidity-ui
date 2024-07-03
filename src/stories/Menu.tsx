@@ -10,17 +10,14 @@ export const Menu = ({
   color = 'white',
   underline = true,
   ...props
-}: MenuProps) => {
-  return (
-    <div
-      className="menu"
-      style={{
-        color,
-        textDecorationLine: underline ? 'underline' : 'none'
-      }}
-      {...props}
-    >
-      {label}
-    </div>
-  )
-}
+}: MenuProps) => (
+  <div
+    style={{
+      color,
+      textDecoration: underline ? 'underline' : 'none',
+    }}
+    {...props}
+  >
+    {label}
+  </div>
+);
