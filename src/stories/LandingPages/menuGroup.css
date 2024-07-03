@@ -1,0 +1,7 @@
+.menu-group-header{
+  display: flex;
+}
+
+.menu-group-header > * {
+  padding: 10px 40px;
+}
