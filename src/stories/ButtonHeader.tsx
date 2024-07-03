@@ -3,6 +3,7 @@ import { useGSAP } from '@gsap/react'
 import { useEffect, useRef, useState } from 'react';
 import { Menu } from './Menu';
 import "./buttonHeader.css"
+import { MenuGroup } from './LandingPages/MenuGroup';
 interface ButtonHeaderProps {
   showMenu: boolean
 }
@@ -72,14 +73,12 @@ export const ButtonHeader = ({ showMenu = false, ...props }: ButtonHeaderProps) 
     <div ref={container} >
       <div {...props} className="button-header" >
         <div className="menuheaderItem">
-          {menuGroupItem.map((item, index) => (
-            <Menu {...item} key={index} />
-          ))}
+          <MenuGroup type='button' />
         </div>
         <button
           style={{ ...configuration.buttonStyle }}
           type='button'
-          className='button'
+          className='button-start'
           {...props}
           ref={buttonRef}
         >

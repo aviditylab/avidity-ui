@@ -1,4 +1,4 @@
-.menu-group-header{
+.menu-group-header, .menu-group-button{
   display: flex;
 }
 
@@ -7,6 +7,11 @@
   cursor: pointer;
 }
 
-.menu-group-header > *:hover {
+.menu-group-button > * {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.menu-group-header > *:hover, .menu-group-button > *:hover {
   font-weight: 900;
 }

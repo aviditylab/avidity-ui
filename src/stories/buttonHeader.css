@@ -7,16 +7,20 @@
   overflow: hidden;
 }
 
-.button {
+.button-start {
   border-radius: 10rem;
   border: 0;
   font-weight: 700;
-  font-weight: 16px;
   padding: 16px 24px;
   width: 142px;
   font-family: inter sans-serif;
   flex-wrap: nowrap;
   text-wrap: nowrap;
+  cursor: pointer;
+}
+
+.button-start:hover {
+  font-weight: 700;
 }
 
 .menuheaderItem {
@@ -26,5 +30,6 @@
 }
 
 .menuheaderItem > * {
-  padding: 10px 20px
+  padding: 0px 20px
 }
+

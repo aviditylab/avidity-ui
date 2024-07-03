@@ -2,10 +2,11 @@ import { useState } from "react"
 import { Menu, MenuProps } from "../Menu"
 import './menuGroup.css'
 export interface MenuGroupProps {
-  items?: MenuProps[]
+  items?: MenuProps[],
+  type: "header" | "button"
 }
 
-export const MenuGroup = ({ items = defaultMenuGroup }: MenuGroupProps) => {
+export const MenuGroup = ({ items = defaultMenuGroup, type = "header" }: MenuGroupProps) => {
   const [menuState, setMenuState] = useState<MenuProps[]>(items)
 
   const handleChangeMenu = (index: number) => {
@@ -19,7 +20,7 @@ export const MenuGroup = ({ items = defaultMenuGroup }: MenuGroupProps) => {
   }
 
   return (
-    <div className="menu-group-header">
+    <div className={type == "header" ? "menu-group-header" : "menu-group-button"}>
       {menuState.map((item, index) => (
         <Menu {...item} onClick={() => handleChangeMenu(index)} key={index} />
       ))}
