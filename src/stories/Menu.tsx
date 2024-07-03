@@ -17,6 +17,7 @@ export const Menu = ({
       textDecoration: underline ? 'underline' : 'none',
     }}
     {...props}
+    onClick={props.onClick}
   >
     {label}
   </div>

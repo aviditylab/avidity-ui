@@ -4,4 +4,9 @@
 
 .menu-group-header > * {
   padding: 10px 40px;
+  cursor: pointer;
+}
+
+.menu-group-header > *:hover {
+  font-weight: 900;
 }
